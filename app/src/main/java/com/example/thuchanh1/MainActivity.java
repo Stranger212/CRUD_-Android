@@ -132,6 +132,7 @@ public class MainActivity extends AppCompatActivity implements TourAdapter.TourI
             }
         }
         if(filterlist.isEmpty()) {
+            tourAdapter.filterList(new ArrayList<>());
             Toast.makeText(this, "No data found", Toast.LENGTH_SHORT).show();
         } else {
             tourAdapter.filterList(filterlist);
