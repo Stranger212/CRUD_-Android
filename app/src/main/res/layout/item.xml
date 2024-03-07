@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="5dp"
+        android:background="#EEEEEE">
+
+        <ImageView
+            android:id="@+id/icon_img"
+            android:src="@drawable/icon_airport"
+            android:layout_width="40dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/tv_schedule"
+            android:text="Ha Noi - SaPa"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:text="3 ngay 2 dem"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_remove"
+            android:text="Remove"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
